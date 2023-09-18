@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
@@ -29,7 +31,13 @@ public class HelloActivity extends Activity {
                 button1.setText("Тык-тык");
                 pressCount1++;
                 String message1 = "Число нажатий на первую кнопку: " + pressCount1;
+                //first.setText(Integer.toString(pressCount1));
                 first.setText(message1);
+                FrameLayout.LayoutParams a = new FrameLayout.LayoutParams(650, 180);
+                a.leftMargin = 300;
+                a.bottomMargin = 1000;
+                a.gravity = 1500;
+                button1.setLayoutParams(a);
             }
         });
 

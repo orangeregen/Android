@@ -30,12 +30,7 @@
             android:layout_gravity="top"
             android:textSize="70pt" />
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:layout_gravity="bottom"
-        android:text="Тыкни на меня!"/>
+
 
     <Button
         android:id="@+id/button2"
@@ -45,5 +40,10 @@
         android:text="Попробуй тыкнуть!" />
 
     </LinearLayout>
-
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right"
+        android:text="Тыкни на меня!"/>
 </FrameLayout>
