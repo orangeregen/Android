@@ -29,7 +29,6 @@ public class HelloActivity extends Activity {
                 button1.setText("Тык-тык");
                 pressCount1++;
                 String message1 = "Число нажатий на первую кнопку: " + pressCount1;
-                //first.setText(Integer.toString(pressCount1));
                 first.setText(message1);
             }
         });
