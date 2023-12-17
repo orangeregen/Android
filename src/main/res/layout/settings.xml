@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    >
+
+    <TextView
+        android:id ="@+id/settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Настройки"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id ="@+id/box"
+        android:layout_width="400dp"
+        android:layout_height="680dp"
+        android:background="#90ffffff"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/settings"
+        />
+
+    <TextView
+        android:id ="@+id/chgpswd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:text="Изменить пароль"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="#2E023D"
+        />
+
+    <EditText
+        android:id="@+id/login"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/chgpswd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="#50000000"
+        android:hint="Логин"
+        android:paddingLeft="20dp"
+        android:textColor="@color/white"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/oldPswd"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#50000000"
+        android:hint="Старый пароль"
+        android:paddingLeft="20dp"
+        android:textColor="@color/white"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/newPswd"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/oldPswd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#50000000"
+        android:hint="Новый пароль"
+        android:paddingLeft="20dp"
+        android:textColor="@color/white"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/chngBtn"
+        android:layout_below="@id/newPswd"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Изменить пароль"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id ="@+id/delacc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Удалить аккаунт"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="#2E023D"
+        android:layout_below="@id/chngBtn"
+        />
+
+    <EditText
+        android:id="@+id/loginDel"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/delacc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="#50000000"
+        android:hint="Логин"
+        android:paddingLeft="20dp"
+        android:textColor="@color/white"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/delBtn"
+        android:layout_below="@id/loginDel"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Удалить аккаунт"
+        android:textSize="25dp" />
+
+</RelativeLayout>
